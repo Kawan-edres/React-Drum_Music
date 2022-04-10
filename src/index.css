@@ -1,5 +1,7 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +9,99 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+text-align: center;
+width: 80%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8%;
+  
+}
+.drums{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  grid-row-gap: 1rem;
+  grid-column-gap: .3rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.drum{
+  background-color: #F4D03F;
+  background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+      width: 150px;
+	height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  transition: 0.3s;
+}
+
+.drum:hover{
+  opacity: 0.7;
+
+
+}
+
+
+.play{
+  transform: scale(1.1);
+  background-image: radial-gradient( circle farthest-corner at 2.5% 5.5%,  rgba(10,36,99,1) 0%, rgba(228,60,82,1) 90% );
+
+}
+.scale{
+  transform: scale(1.1);
+  background-image: radial-gradient( circle farthest-corner at 2.5% 5.5%,  rgba(10,36,99,1) 0%, rgba(228,60,82,1) 90% );
+
+ 
+}
+
+
+
+@media screen and (max-width:768px){
+
+  .App{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2rem;  
+  }
+
+  .drums{
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  
+    justify-items: center;
+  }
+   
+  .drum{
+    width: 100px;
+    height: 100px;
+  }
+  
+}
+
+
+@media screen and (max-width:500px){
+  h1{
+    font-size: 1.5rem;
+  }
 }
