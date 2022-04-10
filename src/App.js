@@ -3,6 +3,7 @@ import Drum from "./Components/Drum";
 import Sounds from "./Components/Sounds";
 
 function App() {
+  const date=new Date().getFullYear();
   const[sounds,setSouds] =useState([
     {
       key:'A',
@@ -61,6 +62,8 @@ function App() {
     </div>
 
    
+
+   <footer >Kawan Idrees ❤ {date}</footer>
     </div>
   );
 }

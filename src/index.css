@@ -32,7 +32,7 @@ h1{
   grid-row-gap: 1rem;
   grid-column-gap: .3rem;
   padding: 2rem;
-  margin: 2rem auto;
+  margin: 4rem auto;
   width: 100%;
   justify-content: center;
 }
@@ -72,6 +72,14 @@ h1{
   background-image: radial-gradient( circle farthest-corner at 2.5% 5.5%,  rgba(10,36,99,1) 0%, rgba(228,60,82,1) 90% );
 
  
+}
+
+footer{
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+
 }
 
 
